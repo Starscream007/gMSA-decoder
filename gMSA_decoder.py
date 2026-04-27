@@ -31,7 +31,7 @@ if IMPACKET_AVAILABLE:
     print()
     print("\033[92m==> AES key derivation (optional — needed if RC4 is blocked)\033[0m")
     print("\033[93m    Format salt: REALM.TLDhost<samaccountname_without_$_lowercase>.<fqdn_lowercase>\033[0m")
-    print("\033[93m    Example: PONG.HTBhostpong_gmsa.pong.htb\033[0m")
+    print("\033[93m    Example: internal.localhostadm_gmsa.internal.local\033[0m")
     salt_input = input("\033[92m==> Enter Kerberos salt (leave empty to skip): \033[0m").strip()
     if salt_input:
         try:
